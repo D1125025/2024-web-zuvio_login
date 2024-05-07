@@ -4,25 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zuvio 即時反饋系統</title>
-  <link rel="shortcut icon" type="image/png" href="https://s3.hicloud.net.tw/zuvio.public/public/system/images/irs_v4/teacher/index/zuvio_irs_logo.ico">
-  <link rel="stylesheet" type="text/css" href="./Zuvio 即時反饋系統_files/jquery.fancybox.min.css">
+<!--  <link rel="stylesheet" type="text/css" href="./Zuvio 即時反饋系統_files/jquery.fancybox.min.css">-->
 <!--  <link rel="stylesheet" href="styles.css">-->
   <link rel="stylesheet" type="text/css" href="./Zuvio 即時反饋系統_files/irs_login-00707d736a.css">
 </head>
 <body>
 <div id="content">
   <div class="c-header-row">
-    <div class="c-h-r-chinese" onclick="redirectURL('https://irs.zuvio.com.tw/student5/change_lang/index')">中文</div>
-    <div class="c-h-r-english" onclick="redirectURL('https://irs.zuvio.com.tw/student5/change_lang/index/english')">English</div>
-    <div class="c-h-r-register" onclick="redirectURL('https://irs.zuvio.com.tw/irs/chooseRegisterType')">註冊新帳號</div>
+    <div class="c-h-r-chinese" >中文</div>
+    <div class="c-h-r-english" >English</div>
+    <div class="c-h-r-register" >註冊新帳號</div>
     <div class="clear"></div>
   </div>
   <div class="logo">
-    <img src="./Zuvio 即時反饋系統_files/new-logo@2x.png">
+    <img src="imgs/new-logo@2x.png">
   </div>
   <div class="input-form">
     <form id="myform" name="myform" action="https://irs.zuvio.com.tw/irs/submitLogin" method="post" accept-charset="utf-8" class="plain">
-      <input type="text" id="email" name="email" class="input" placeholder="電子郵件（帳號）" onchange="checkExternalLogin()">
+      <input type="text" id="email" name="email" class="input" placeholder="電子郵件（帳號）">
       <input type="password" id="password" name="password" class="input" placeholder="密碼">
       <input type="hidden" id="current_language" name="current_language" value="zh-TW">
       <input type="hidden" id="back_url" name="back_url" value="">
@@ -30,39 +29,19 @@
         <div class="clear"></div>
       </div>
       <div class="button-block">
-        <div id="forget-password" onclick="socialEvent('login_checkSynced');openUnviersityHintFcbx()">合作學校帳密查詢</div>
-        <div id="regist-account" onclick="socialEvent('login_forgetPassword');redirectURL('https://irs.zuvio.com.tw/irs/forgetPassword')">忘記密碼</div>
+        <div id="forget-password" >合作學校帳密查詢</div>
+        <div id="regist-account" >忘記密碼</div>
         <div class="clear"></div>
       </div>
       <div class="button-block" style="margin-top: 4px;">
-        <div class="phone-login" onclick="redirectURL('https://irs.zuvio.com.tw/irs/loginPhone')">使用手機號碼登入</div>
+        <div class="phone-login" >使用手機號碼登入</div>
         <div class="clear"></div>
       </div>
       <button type="submit" id="login-btn" class="submit-button">登入</button>
     </form>
   </div>
-  <div class="irs-corp-link">不是校園版使用者嗎？<a target="blank" href="https://corp.zuvio.com.tw/">前往企業版</a></div>
-  <div class="browser-warning hidden">
-    您的瀏覽器版本過舊或是系統不支援<br>
-    為了給予您最佳的使用者體驗<br>
-    建議您使用<a target="blank" href="https://www.google.com/chrome/browser/">新版Google Chrome瀏覽器</a>
-  </div>
-</div>
-<div class="hidden" id="login-account-hints-fcbx-btn" href="#login-account-hints-fcbx"></div>
-<div id="login-account-hints-fcbx">
-  <!-- 這裡放置找不到學校的提示內容 -->
-</div>
-<div class="hidden" id="login-account-hints-s-fcbx-btn" href="#login-account-hints-s-fcbx"></div>
-<div id="login-account-hints-s-fcbx">
-  <!-- 這裡放置帳號密碼同步提示內容 -->
-</div>
-<div class="hidden" id="not-found-school-fcbx-btn" href="#not-found-school-fcbx"></div>
-<div id="not-found-school-fcbx" class="fcbx-class">
-  <!-- 這裡放置找不到學校的提示內容 -->
-</div>
-<div class="hideen" id="account-corp-fcbx-btn" href="#account-corp-fcbx"></div>
-<div id="account-corp-fcbx" class="fcbx-class">
-  <!-- 這裡放置企業版帳號提示內容 -->
+  <div class="irs-corp-link">不是校園版使用者嗎？<a target="blank">前往企業版</a></div>
+
 </div>
 </body>
 </html>
