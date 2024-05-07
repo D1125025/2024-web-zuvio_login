@@ -1,0 +1,57 @@
+html{
+    background: #f0f2f5;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.fb_words {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    padding: 0 0 20px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.fb_pic {
+    height: 106px;
+    margin: -28px;
+
+
+}
+
+.front_space {
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 980px;
+}
+.above_space{
+    padding: 184px 0 16px;
+
+}
+
+.input_box{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.word_box {
+    padding: 10px 0 24px; /* 調整 padding */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    margin-top: 40px; /* 移除 margin-bottom，將 margin-top 設置為 40px */
+    width: 396px;
+    display: inline-block; /* 將 .word_box 設置為 inline-block */
+    vertical-align: top;
+}
